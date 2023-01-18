@@ -1,0 +1,527 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*-----------------BASE STYLES------------------------------------------------*/
+body {
+  font-family: 'Anonymous Pro', monospace;
+  background: #f8f8f3;
+
+}
+
+/*-----------------MOBILE STYLES----------------------------------------------
+===============================================================================*/
+
+/*-----------------HEADER STYLES----------------------------------------------*/
+header {
+  background: #90beab;
+  text-align: center;
+}
+
+#logo img {
+  max-width: 300px;
+  vertical-align: bottom;
+  height: 100%;
+}
+
+#logo {}
+
+#name {
+  display: none;
+}
+
+nav {
+  font-size: 1em;
+  font-family: 'Abril Fatface', cursive;
+  background: #f45b69;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-content: center;
+  padding-right: 10px;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  max-height: 50px;
+
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav h3 {
+  padding: 2px 5px;
+}
+
+/*------------------------------------MAIN STYLES------------------------------*/
+
+.intro {
+  text-align: center;
+  border-bottom: black solid 2px;
+
+}
+
+.intro p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.intro img {
+  max-width: 185px;
+  padding-bottom: 15px;
+}
+
+/*-------------------------------------PORTFOLIO STYLES-------------------------*/
+
+.portfolio {
+  background: #a0aabe;
+  display: flex;
+  flex-flow: column;
+  border-bottom: black solid 2px;
+}
+
+.portfolio h1 {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  background-color: #f8f8f3;
+  border: black solid 4px;
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.project {
+  background-color: #f8f8f3;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.project img {
+  max-width: 90%;
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: black solid 3px;
+}
+
+.project-description {
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 90%;
+}
+
+.portfolio button {
+  border-radius: 20px;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  padding: 5px;
+  font-size: 1em;
+}
+
+.live-page {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/*------------------------------------SKILLS STYLES---------------------------*/
+.skills {
+  border-bottom: black solid 2px;
+}
+
+
+.skills h1,
+.skills h3 {
+  text-align: center;
+}
+
+.skills h3 {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.25em;
+
+}
+
+.skill img {
+  max-width: 75px;
+
+}
+
+.skill {
+  text-align: center;
+
+}
+
+.skill h2 {
+  background: #f45b69;
+  margin-left: 18%;
+  margin-right: 18%;
+  font-size: .95em;
+  font-weight: bold;
+
+}
+
+.additional-skills {
+  padding: 20px;
+
+}
+
+.additional-skills h2 {
+  background: #253d58;
+  color: #f8f8f3;
+}
+
+/*--------------------------------ABOUT STYLES--------------------------------*/
+.about {
+  background: #a0aabe;
+  display: flex;
+  flex-direction: column;
+  border-bottom: black solid 2px;
+}
+
+.about h1 {
+  text-align: center;
+}
+
+#profile-pic {
+  align-self: center;
+}
+
+#profile-pic img {
+  max-width: 150px;
+}
+
+  #profile-description {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: bold;
+
+}
+
+#profile-decoration {
+  text-align: center;
+}
+#profile-decoration img{
+  max-width: 75%;
+  padding-bottom: 10px;
+}
+
+/*----------------------------------FOOTER STYLES -----------------------------*/
+footer {
+  background: #253d58;
+  color: #f8f8f3;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+footer h1, footer h2 {
+  text-align: center;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+.social-media a{
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  justify-self: end;
+  padding-right: 15px;
+}
+
+.social-media img {
+  max-width: 60px;
+}
+
+.social-media h2 {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  justify-self: start;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.social-media h3 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  justify-self: start;
+  font-size: .98em;
+}
+
+.social-media a {
+  text-decoration: none;
+  color: #f8f8f3;
+}
+
+  footer h5 {
+    text-align: center;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " ("attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " ("attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
