@@ -47,22 +47,90 @@
   <main>
     <div class="intro">
       <h2>Hi, I'm Chelsea Day</h2>
-      <p>I'm a Front End Developer who thrives on details and creating the best user experience possible</p>
+      <p>I'm a Front End Developer who thrives on details and creating the best user experience possible.</p>
       <img src="img/openbook.png" alt="An open book with flowers growing out of the middle and butterflies.">
     </div>
+    <div><button onclick="topFunction()" id="myBtn" title="Go to top">&#8593; Back to top</button></div>
     <div class='portfolio' id='portfolio'>
       <h1>Portfolio</h1>
-      <div class="project">
-        <img src="img/jubilee-thumbnail.png" alt="Picture of a portfolio website.">
-        <div class="project-description">
-          <p>A responsive website using Flexbox & CSS Grid coded from a PSD.</p>
-          <h4>Skills: HTML, CSS, Flexbox</h4>
-          <h4>Tools: </h4>
+      <div class="projects">
+        <div class="project">
+          <img src="img/jubilee-thumbnail.png" alt="Picture of a portfolio website.">
+          <div class="project-description">
+            <p>A responsive website using Flexbox & CSS Grid coded from a PSD.</p>
+            <h4>Skills: HTML, CSS, Flexbox</h4>
+            <h4>Tools: </h4>
+          </div>
+          <div class="live-page">
+            <a href='https://calenfeaelen.github.io/jubilee-austen/' target="_blank">
+              <button type="button">Live Page</button>
+            </a>
+          </div>
         </div>
-        <div class="live-page">
-          <a href='https://calenfeaelen.github.io/jubilee-austen/' target="_blank">
-            <button type="button">Live Page</button>
-          </a>
+        <div class="project">
+          <img src="img/rogue-pickings-thumbnail.png" alt="Picture of a portfolio website.">
+          <div class="project-description">
+            <p>A one page static site coded from a PSD that I made responsive utilizing CSS Flexbox and Grid.</p>
+            <h4>Skills: HTML, CSS, Flexbox</h4>
+            <h4>Tools: </h4>
+          </div>
+          <div class="live-page">
+            <a href='https://calenfeaelen.github.io/rogue-pickings/' target="_blank">
+              <button type="button">Live Page</button>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="img/unplugged.jpg" alt="Picture of a portfolio website.">
+          <div class="project-description">
+            <p>A responsive site coded from a PSD using CSS Flexbox.</p>
+            <h4>Skills: HTML, CSS, Flexbox</h4>
+            <h4>Tools: </h4>
+          </div>
+          <div class="live-page">
+            <a href='https://calenfeaelen.github.io/unplugged-retreat/' target="_blank">
+              <button type="button">Live Page</button>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="img/guess-the-word.PNG" alt="Picture of a portfolio website.">
+          <div class="project-description">
+            <p>A Javascript guess the word game that uses an API to pull random words.</p>
+            <h4>Skills: HTML, CSS, Javascript</h4>
+            <h4>Tools: </h4>
+          </div>
+          <div class="live-page">
+            <a href='https://calenfeaelen.github.io/guess-the-word/' target="_blank">
+              <button type="button">Live Page</button>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="img/github-repo-gallery.PNG" alt="Picture of a portfolio website.">
+          <div class="project-description">
+            <p>A project utilizing Javascript and an API to display my Github Repos.</p>
+            <h4>Skills: HTML, CSS, Javascript</h4>
+            <h4>Tools: </h4>
+          </div>
+          <div class="live-page">
+            <a href='https://calenfeaelen.github.io/github-repo-gallery/' target="_blank">
+              <button type="button">Live Page</button>
+            </a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="img/accelerate.png" alt="Picture of a portfolio website.">
+          <div class="project-description">
+            <p>A Wordpress site utilizing a custom theme.</p>
+            <h4>Skills: HTML, CSS, PHP, Wordpress</h4>
+            <h4>Tools: </h4>
+          </div>
+          <div class="live-page">
+            <a href='https://github.com/CalenFeaElen/203-accelerate' target="_blank">
+              <button type="button">Repo</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -92,8 +160,8 @@
           <h2>RESPONSIVE WEB DEVELOPMENT</h2>
         </div>
       </div>
+      <h3>Additional Skills</h3>
       <div class="additional-skills">
-        <h3>Additional Skills</h3>
         <div class="skill">
           <img src="img/attention-detail-logo.png">
           <h2>ATTENTION TO DETAIL</h2>
@@ -114,12 +182,14 @@
     </div>
     <div class="about" id="about">
       <h1>About</h1>
-      <div id="profile-pic">
-        <img src="img/profile.png">
-      </div>
-      <div id="profile-description">
-        <p>Originally from the Pacific Northwest, and currently living in the beautiful Columbia Gorge area, I'm a Front End Developer who thrives on details and crafting the best user experience possible.
-          When I'm not working, pursuing craft projects, or getting lost in a good book, I can be found gardening, hiking and searching for new experiences.</p>
+      <div class="about-container">
+        <div id="profile-pic">
+          <img src="img/profile.png">
+        </div>
+        <div id="profile-description">
+          <p>Originally from the Pacific Northwest, and currently living in the beautiful Columbia Gorge area, I'm a Front End Developer who thrives on details and crafting the best user experience possible.<br> <br>
+            When I'm not working, pursuing craft projects, or getting lost in a good book, I can be found gardening, hiking and searching for new experiences.</p>
+        </div>
       </div>
       <div id="profile-decoration">
         <img src="img/mountainrange.png">
@@ -129,25 +199,27 @@
   <footer id="contact">
     <h1>Contact</h1>
     <h2>Hire Me or Follow Me:</h2>
-    <div class="social-media">
-      <a><img src="img/email-icon-green-back.png"></a>
-      <h2>Email</h2>
-      <h3>CalenFeaElen@gmail.com</h3>
-    </div>
-    <div class="social-media">
-      <a href="https://github.com/CalenFeaElen" target="_blank"><img src="img/github-icon-green-back.png"></a>
-      <h2>Github</h2>
-      <h3><a href="https://github.com/CalenFeaElen" target="_blank">Check out my repos</a></h3>
-    </div>
-    <div class="social-media">
-      <a href="https://www.linkedin.com/in/chelsea-day-she-her-1554b4108" target="_blank"><img src="img/linkedin-icon-green-back.png"></a>
-      <h2>LinkedIn</h2>
-      <h3><a href="https://www.linkedin.com/in/chelsea-day-she-her-1554b4108/" target="_blank">Let's Connect</a></h3>
-    </div>
-    <div class="social-media">
-      <a href="https://calenfeaelen.wpengine.com/" target="_blank"><img src="img/wordpress-icon-green-back.png"></a>
-      <h2>Wordpress</h2>
-      <h3><a href="https://calenfeaelen.wpengine.com/" target="_blank">Check out my Wordpress Site</a></h3>
+    <div class="social-media-links">
+      <div class="social-media">
+        <a><img src="img/email-icon-green-back.png"></a>
+        <h2>Email</h2>
+        <h3>CalenFeaElen@gmail.com</h3>
+      </div>
+      <div class="social-media">
+        <a href="https://github.com/CalenFeaElen" target="_blank"><img src="img/github-icon-green-back.png"></a>
+        <h2>Github</h2>
+        <h3><a href="https://github.com/CalenFeaElen" target="_blank">Check out my repos</a></h3>
+      </div>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/chelsea-day-she-her-1554b4108" target="_blank"><img src="img/linkedin-icon-green-back.png"></a>
+        <h2>LinkedIn</h2>
+        <h3><a href="https://www.linkedin.com/in/chelsea-day-she-her-1554b4108/" target="_blank">Let's Connect</a></h3>
+      </div>
+      <div class="social-media">
+        <a href="https://calenfeaelen.wpengine.com/" target="_blank"><img src="img/wordpress-icon-green-back.png"></a>
+        <h2>Wordpress</h2>
+        <h3><a href="https://calenfeaelen.wpengine.com/" target="_blank">Check out my Wordpress Site</a></h3>
+      </div>
     </div>
     <h5>Copyright 2022 Chelsea Day</h5>
   </footer>
